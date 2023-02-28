@@ -19,41 +19,67 @@ main{
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+}
+
+.reaction, .memory, .verbal, .visual{
+    padding: 1rem;
+    width: 10rem;
+    margin: 1rem 1rem;
+    /* border: 1px solid gray; */
+    border-radius: 1rem;
 }
 
 .reaction{
-    color:hsl(0, 100%, 67%)
+    color:hsl(0, 100%, 67%);
+    background-color:hsla(0, 100%, 67%, 0.1);
 }
 
 .memory{
-    color:hsl(39, 100%, 56%)
+    color:hsl(39, 100%, 56%);
+    background-color:hsl(39, 100%, 56%,0.1);
 }
 
 .verbal{
-    color:hsl(166, 100%, 37%)
+    color:hsl(166, 100%, 37%);
+    background-color:hsl(166, 100%, 37%,0.1);
 }
 
 .visual{
-    color:hsl(234, 85%, 45%)
+    color:hsl(234, 85%, 45%);
+    background-color:hsl(234, 85%, 45%,0.1);
 
 }
 
 .btn--continue{
     margin-top: 1rem;
+    border-style: none;
     border-radius: 3rem;
     padding: .5rem  ;
     background-color: hsl(224, 30%, 27%);
     color:hsl(221, 100%, 96%);
     width: 10rem;
-
 }
 
 .btn--continue:hover{
     background-color:  hsl(241, 81%, 54%);
 }
 
+.btn--continue:active{
+    background-color:  hsl(241, 81%, 75%);
+}
+
+
+
 /* Attribution */
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-top: 3rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
