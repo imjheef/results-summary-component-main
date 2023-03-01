@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: all ease 500ms;
 }
 
 
@@ -12,29 +13,33 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
-    height: 100vh;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 main{
     display: flex;
     flex-direction: row;
-    /* gap: 1.5rem; */
     justify-content: center;
     align-items: center;
-    /* border-radius: 1.5rem; */
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 100px 0px 100px 1px;
 }
+
 section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 350px ;
 }
 
-.reaction, .memory, .verbal, .visual{
-    padding: 1rem;
-    width: 10rem;
-    margin: 1rem 1rem;
-    /* border: 1px solid gray; */
+/* .summary{
+    align-self: flex-start;
+} */
+
+.reaction, .memory, .verbal, .visual, .btn--continue{
+    padding: 1rem 3rem;
+    margin: 1rem 0rem;
     border-radius: 1rem;
 }
 
@@ -56,8 +61,50 @@ section{
 .visual{
     color:hsl(234, 85%, 45%);
     background-color:hsl(234, 85%, 45%,0.1);
-
 }
+
+
+
+.circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: 2rem 0;
+    padding: 3.5rem;
+    background-image: linear-gradient(
+        hsla(256, 72%, 46%, 1), 
+        hsla(241, 72%, 46%, 0));
+}
+
+.result--left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-radius: 1rem;
+    min-height: 50vh;
+}
+
+.word-great{
+    color :hsl(0, 0%, 100%) ;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.text{
+    margin: 1rem;
+    color: hsl(241, 100%, 89%);
+}
+
+.big-76{
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: hsl(0, 0%, 100%)
+}
+
 
 .btn--continue{
     margin-top: 1rem;
@@ -66,29 +113,30 @@ section{
     padding: 1rem  ;
     background-color: hsl(224, 30%, 27%);
     color:hsl(221, 100%, 96%);
-    width: 10rem;
     font-weight: 700;
 
 }
 
 .btn--continue:hover{
     background-color:  hsl(241, 81%, 54%);
-    color: hsl(241, 100%, 89%);
-    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%))
+    color: hsl(221, 100%, 96%);
+    background-image: linear-gradient(hsl(252, 100%, 67%), 
+                                    hsl(241, 81%, 54%));
+    box-shadow: rgba(0, 0, 0, 0.068) 0 0 1rem 1rem;
+    transition: all ease 500ms;
 }
 
 .btn--continue:active{
-    background-color:  hsl(241, 81%, 75%);
+    background-image: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
 }
-
-
 
 /* Attribution */
 
 .attribution { 
-    font-size: 11px;
+    font-size: 14px;
+    font-weight: 700px;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%);
