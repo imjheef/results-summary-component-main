@@ -26,15 +26,11 @@ main{
     box-shadow: rgba(0, 0, 0, 0.1) 100px 0px 100px 1px;
 }
 
-section{
+/* section{
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 350px ;
-}
-
-/* .summary{
-    align-self: flex-start;
 } */
 
 .reaction, .memory, .verbal, .visual, .btn--continue{
@@ -64,6 +60,24 @@ section{
 }
 
 
+p{
+    color:hsl(241, 100%, 89%);
+    text-align: center;
+    padding: 0 3rem
+}
+
+.summary--left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( 
+        hsl(252, 100%, 67%),
+        hsl(241, 81%, 54%));
+    border-radius: 1rem;
+    min-height: 50vh;
+    max-width: 350px;
+}
 
 .circle{
     display: flex;
@@ -71,21 +85,13 @@ section{
     justify-content: center;
     align-items: center;
     border-radius: 100%;
+    width: 50px;
+    height: 50px;
     margin: 2rem 0;
-    padding: 3.5rem;
+    padding: 5.5rem;
     background-image: linear-gradient(
-        hsla(256, 72%, 46%, 1), 
+        hsla(256, 72%, 46%, 1),
         hsla(241, 72%, 46%, 0));
-}
-
-.result--left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient( hsl(252, 100%, 67%),hsl(241, 81%, 54%));
-    border-radius: 1rem;
-    min-height: 50vh;
 }
 
 .word-great{
@@ -105,23 +111,27 @@ section{
     color: hsl(0, 0%, 100%)
 }
 
-
 .btn--continue{
     margin-top: 1rem;
     border-style: none;
     border-radius: 3rem;
-    padding: 1rem  ;
+    width: 12rem;
+    /* padding: 1rem  2rem ; */
     background-color: hsl(224, 30%, 27%);
     color:hsl(221, 100%, 96%);
     font-weight: 700;
 
 }
-
+h1{
+    color: hsl(241, 100%, 89%);
+}
 .btn--continue:hover{
     background-color:  hsl(241, 81%, 54%);
     color: hsl(221, 100%, 96%);
-    background-image: linear-gradient(hsl(252, 100%, 67%), 
-                                    hsl(241, 81%, 54%));
+    background-image: linear-gradient(
+        hsl(252, 100%, 67%), 
+        hsl(241, 81%, 54%)
+        );
     box-shadow: rgba(0, 0, 0, 0.068) 0 0 1rem 1rem;
     transition: all ease 500ms;
 }
