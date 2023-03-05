@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     transition: all ease 500ms;
+    
 }
 
 
@@ -15,7 +16,9 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+
 }
+
 
 main{
     display: flex;
@@ -24,16 +27,14 @@ main{
     align-items: center;
     border-radius: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.1) 100px 0px 100px 1px;
+    
 }
 
-/* section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 350px ;
-} */
 
 .reaction, .memory, .verbal, .visual, .btn--continue{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     padding: 1rem 3rem;
     margin: 1rem 0rem;
     border-radius: 1rem;
@@ -100,10 +101,11 @@ p{
     font-weight: 400;
 }
 
-.text{
+.below-great{
     margin: 1rem;
     color: hsl(241, 100%, 89%);
 }
+
 span{
     font-weight: 700;
     color:hsl(224, 30%, 27%);
