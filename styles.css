@@ -175,3 +175,15 @@ ul{
 .attribution a { 
     color: hsl(228, 45%, 44%);
 }
+
+@media (max-width: 500px) { 
+    main { 
+        display: flex;
+        flex-wrap: wrap; 
+        flex-direction: column; 
+        justify-content: space-between; 
+        align-items: center; 
+        border-radius: 1.5rem; 
+        box-shadow: rgb(0 0 0 / 10%) 100px 0px 100px 1px;       
+    }
+}
