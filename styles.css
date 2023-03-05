@@ -30,6 +30,9 @@ main{
     
 }
 
+.summary--right{
+    margin: 0 2rem;
+}
 
 .reaction, .memory, .verbal, .visual, .btn--continue{
     display: flex;
