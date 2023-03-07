@@ -1,9 +1,13 @@
 /* reset */
-
+:root{
+    --border-top-radius: {
+        border-start-start-radius: 0;
+        border-start-end--radius:  0;
+    }, 
+}
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;    
 }
 
 
@@ -176,7 +180,12 @@ ul{
     color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 500px) { 
+@media (max-width: 680px) { 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
     main { 
         display: flex;
         flex-wrap: wrap; 
@@ -184,6 +193,13 @@ ul{
         justify-content: space-between; 
         align-items: center; 
         border-radius: 1.5rem; 
-        box-shadow: rgb(0 0 0 / 10%) 100px 0px 100px 1px;       
+        box-shadow: rgb(0 0 0 / 10%) 100px 0px 100px 1px;      
     }
+
+    .summary--left{
+        border-start-start-radius: var(--border-top-radius);
+        border-start-end-radius: var(--border-top-radius);
+        margin-bottom: 1rem;
+    }
+
 }
